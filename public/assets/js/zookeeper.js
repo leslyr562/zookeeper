@@ -1,4 +1,5 @@
 const $displayArea = document.querySelector('#display-area');
+const $zookeeperForm = document.querySelector("#zookeeper-form");
 
 const printResults = resultArr => {
   console.log(resultArr);
@@ -33,5 +34,5 @@ const getZookeepers = () => {
       printResults(zookeeperArr);
     });
 };
-
+$zookeeperForm.addEventListener('submit', handleGetZookeepersSubmit);
 getZookeepers();
